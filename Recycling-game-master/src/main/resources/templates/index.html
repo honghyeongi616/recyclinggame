@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분리수거 게임</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>테트리스 방식 분리수거 게임</h1>
+<div id="game-container">
+    <div id="falling-item"></div>
+    <div id="bins">
+        <div class="bin" data-type="PET">페트</div>
+        <div class="bin" data-type="PLASTIC">플라스틱</div>
+        <div class="bin" data-type="Binil">비닐류</div>
+        <div class="bin" data-type="CAN">캔 류</div>
+        <div class="bin" data-type="WASTE">일반쓰레기</div>
+        <div class="bin" data-type="PAPER">종이</div>
+        <div class="bin" data-type="PACK">종이팩</div>
+        <div class="bin" data-type="GLASS">유리</div>
+        <div class="bin" data-type="Bottle">병류</div>
+    </div>
+</div>
+
+<!-- 시작 및 재시작 버튼 -->
+<button id="start-button">시작</button>
+<button id="restart-button" style="display: none;">재시작</button>
+<div id="score-display" style="display: none;">점수: <span id="score">0</span></div>
+<div id="time-display">시간: <span id="time">60</span>초</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

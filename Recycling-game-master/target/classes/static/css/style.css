@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    overflow: hidden; /* 아이템이 컨테이너를 넘어가지 않게 하기 */
+}
+
+#falling-item {
+    position: absolute;
+    width: 50px; /* 아이템 너비 */
+    height: 50px; /* 아이템 높이 */
+    background-color: red; /* 아이템 색상 */
+}
+
+#bins {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bin {
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h1 {
+    color: #333;
+}
